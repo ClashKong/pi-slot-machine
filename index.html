@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Machine 🎰</title>
+
+    <!-- Stylesheet laden -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Pi Network SDK -->
+    <script src="https://sdk.minepi.com/pi-sdk.js"></script>
+
+    <!-- Spiel-Logik (defer = lädt nach dem HTML) -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>🎰 Slot Machine</h1>
+    
+    <!-- Slot Machine UI -->
+    <div class="slot-machine">
+        <div class="reel" id="reel1">🍒</div>
+        <div class="reel" id="reel2">🍋</div>
+        <div class="reel" id="reel3">🍊</div>
+    </div>
+
+    <!-- Spin-Button -->
+    <button id="spin">SPIN 🎲</button>
+
+    <!-- Ergebnis-Anzeige -->
+    <p id="result"></p>
+
+</body>
+</html>
