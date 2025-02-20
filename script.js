@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     ];
     const spinButton = document.getElementById("spin");
     const resultText = document.getElementById("result");
+    const loginButton = document.getElementById("login-button");
 
     // 🔥 Pi Network SDK einbinden & initialisieren
     if (typeof Pi === "undefined") {
@@ -25,14 +26,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const appId = "DEIN_APP_ID"; // Ersetze mit deiner App-ID von developers.minepi.com
     let user = null;
-
-    // 🔹 Login-Button erstellen
-    const loginButton = document.createElement("button");
-    loginButton.textContent = "Mit Pi Wallet anmelden";
-    loginButton.style.padding = "10px 20px";
-    loginButton.style.marginTop = "20px";
-    loginButton.style.cursor = "pointer";
-    document.body.appendChild(loginButton);
 
     // 🔹 Pi Wallet Login
     loginButton.addEventListener("click", async () => {
