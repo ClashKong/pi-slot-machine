@@ -1,0 +1,14 @@
+{
+    "name": "slot-machine",
+    "version": "1.0.0",
+    "description": "Eine eigene Slot Machine mit Pi-Integration",
+    "main": "src/script.js",
+    "scripts": {
+      "start": "live-server src"
+    },
+    "dependencies": {},
+    "devDependencies": {
+      "live-server": "^1.2.1"
+    }
+  }
+  
